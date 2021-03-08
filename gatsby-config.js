@@ -12,6 +12,14 @@ module.exports = {
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        sassOptions: {
+          precision: 8,
+        }
+      },
+    },
     `gatsby-plugin-image`,
     {
       resolve: `gatsby-source-filesystem`,
